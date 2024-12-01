@@ -65,7 +65,7 @@ jobs:
           region: ${{ env.SUB_DEPLOYMENT_REGION }}
           resourceGroupName: ${{ env.RESOURCE_GROUP_NAME }}
           template: ./iac/createResources.bicep
-          parameters: ./iac/createResources.parameters.json env=${{ secrets.ENVIRONMENT }} sqlPassword=${{ secrets.SQL_PASSWORD }}
+          parameters: ./iac/createResources.parameters.json suffix=${{ secrets.ENVIRONMENT }} sqlPassword=${{ secrets.SQL_PASSWORD }}
    
   deploy-carts-api:
     runs-on: ubuntu-latest
