@@ -40,7 +40,7 @@ var rgTags = {
 ////////////////////////////////////////////////////////////////////////////////
 
 resource rg 'Microsoft.Resources/resourceGroups@2022-09-01' = {
-  name: '${rgName}${suffix}'
+  name: 'contosotraders-1530041'
   location: rgLocation
   tags: rgTags
 }
