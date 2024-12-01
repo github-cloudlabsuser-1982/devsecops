@@ -4,6 +4,12 @@
   "parameters": {
     "aksLinuxAdminUsername": {
       "value": "localadmin"
+    },
+    "deploymentidvalue": {
+      "value": "1530041"
+    },
+    "bicepsqlpass": {
+      "value": "norv16FPM*AK"
     }
   }
 }
