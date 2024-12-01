@@ -5,10 +5,10 @@
     "aksLinuxAdminUsername": {
       "value": "localadmin"
     },
-    "deploymentidvalue": {
+    "suffix": {
       "value": "1530041"
     },
-    "bicepsqlpass": {
+    "sqlPassword": {
       "value": "norv16FPM*AK"
     }
   }
