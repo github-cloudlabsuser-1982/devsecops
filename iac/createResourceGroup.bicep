@@ -4,15 +4,6 @@ targetScope = 'subscription'
 // parameters
 ////////////////////////////////////////////////////////////////////////////////
 
-// common
-@description('Rg for storage account, service bus, cosmos db & function app. Value is passed from GHA variable.')
-param rgName string
-
-@minLength(3)
-@maxLength(7)
-@description('A unique environment suffix (max 6 characters, alphanumeric only).')
-param suffix string
-
 @description('Set rg location')
 @allowed([
   'australiaeast'
@@ -25,15 +16,15 @@ param suffix string
   'westcentralus'
   'westeurope'
 ])
-param rgLocation string
+var rgLocation = 'eastus'
 
 // variables
 ////////////////////////////////////////////////////////////////////////////////
 
 // tags
 var rgTags = {
-  Product: '${rgName}${suffix}'
-  Environment: suffix
+  Product: 'contosotraders-1530041'
+  Environment: '1530041'
 }
 
 // resource groups
