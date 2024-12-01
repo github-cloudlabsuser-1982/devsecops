@@ -4,18 +4,6 @@ targetScope = 'subscription'
 // parameters
 ////////////////////////////////////////////////////////////////////////////////
 
-@description('Set rg location')
-@allowed([
-  'australiaeast'
-  'centralus'
-  'eastus'
-  'eastus2'
-  'japaneast'
-  'northcentralus'
-  'uksouth'
-  'westcentralus'
-  'westeurope'
-])
 var rgLocation = 'eastus'
 
 // variables
