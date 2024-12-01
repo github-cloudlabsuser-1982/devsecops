@@ -59,7 +59,7 @@ jobs:
           failOnStderr: false
           inlineScript: az keyvault set-policy -n ${{ env.KV_NAME }}${{ secrets.ENVIRONMENT }} --secret-permissions get list set --object-id $(az ad sp show --id $(az account show --query "user.name" -o tsv) --query "id" -o tsv)
       # The AKS agent pool needs to be assigned the user-assigned managed identity created (which has kv access)
-            - name: create resource group
+        - name: create resource group
         uses: Azure/arm-deploy@v1
         with:
           scope: subscription
